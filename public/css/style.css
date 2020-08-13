@@ -1,2 +1,69 @@
-header {
-  color: red; }
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.7rem;
+  color: white; }
+
+@keyframes moveFromRight {
+  0% {
+    transform: translateX(-10rem);
+    opacity: 0; }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    transform: translate(0);
+    opacity: 1; } }
+
+@keyframes moveFromLeft {
+  0% {
+    transform: translateX(20rem);
+    opacity: 0; }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    transform: translate(0);
+    opacity: 1; } }
+
+.container {
+  display: grid;
+  grid-template-rows: 12rem 100vh 12rem;
+  grid-template-areas: "h h h h h" "m m m m c" "f f f f f"; }
+
+.main {
+  background-color: darkmagenta;
+  grid-area: m; }
+
+.chat-box {
+  background-color: crimson;
+  grid-area: c; }
+
+.footer {
+  background-color: green;
+  grid-area: f; }
+
+.header {
+  background-color: crimson;
+  grid-area: h; }
+  .header-text {
+    text-align: center;
+    text-shadow: 0 .5rem .5rem blue;
+    backface-visibility: hidden; }
+  .header-text-main {
+    display: block;
+    letter-spacing: 2rem;
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+    animation: moveFromRight 1s; }
+  .header-text-sub {
+    display: block;
+    letter-spacing: 1rem;
+    font-size: 2.5rem;
+    animation: moveFromLeft 1s; }

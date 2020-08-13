@@ -1,0 +1,8 @@
+.container {
+    display: grid;
+    grid-template-rows: 12rem 100vh 12rem;
+    grid-template-areas: 
+    "h h h h h"
+    "m m m m c"
+    "f f f f f";
+}

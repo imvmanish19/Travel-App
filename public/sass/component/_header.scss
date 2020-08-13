@@ -1,0 +1,25 @@
+.header {
+    background-color: crimson;
+    grid-area: h;
+
+    &-text {
+        text-align: center;
+        text-shadow: 0 .5rem .5rem blue;
+        backface-visibility: hidden;
+    }
+
+    &-text-main {
+        display: block;
+        letter-spacing: 2rem;
+        font-size: 5rem;
+        margin-bottom: 1.5rem;
+        animation: moveFromRight 1s;
+    }
+
+    &-text-sub {
+        display: block;
+        letter-spacing: 1rem;
+        font-size: 2.5rem;
+        animation: moveFromLeft 1s;
+    }
+}
