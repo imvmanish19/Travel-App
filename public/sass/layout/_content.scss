@@ -1,4 +1,28 @@
 .main {
-    background-color: darkmagenta;
+    background-color: whitesmoke;
     grid-area: m;
+    color: black;
+    position: relative;
+    font-size: 5rem;
+
+    .form-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60%;
+    }
+
+    &-form {
+       input {
+        display: block;
+        height: 5rem;
+        width: 50rem;
+        font-size: 3rem;
+        margin-top: 2rem;
+        }
+
+        label:last-child {
+            margin-top: 2rem;
+        }
+    } 
 }

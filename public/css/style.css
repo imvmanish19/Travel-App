@@ -38,8 +38,24 @@ body {
   grid-template-areas: "h h h h h" "m m m m c" "f f f f f"; }
 
 .main {
-  background-color: darkmagenta;
-  grid-area: m; }
+  background-color: whitesmoke;
+  grid-area: m;
+  color: black;
+  position: relative;
+  font-size: 5rem; }
+  .main .form-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%; }
+  .main-form input {
+    display: block;
+    height: 5rem;
+    width: 50rem;
+    font-size: 3rem;
+    margin-top: 2rem; }
+  .main-form label:last-child {
+    margin-top: 2rem; }
 
 .chat-box {
   background-color: #00cc00;
@@ -69,17 +85,18 @@ body {
   grid-area: h; }
   .header-text {
     text-align: center;
-    text-shadow: 0 .5rem .5rem blue;
     backface-visibility: hidden;
     text-transform: uppercase; }
   .header-text-main {
     display: block;
     letter-spacing: 2rem;
     font-size: 5rem;
+    text-shadow: 0 .5rem .5rem blue, 0 -.2rem .5rem blue;
     margin-bottom: 1.5rem;
     animation: moveFromRight 1s; }
   .header-text-sub {
     display: block;
     letter-spacing: 1rem;
     font-size: 2.5rem;
+    text-shadow: 0 .5rem .5rem lime, 0 -.2rem .5rem lime;
     animation: moveFromLeft 1s; }
