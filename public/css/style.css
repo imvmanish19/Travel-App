@@ -42,12 +42,27 @@ body {
   grid-area: m; }
 
 .chat-box {
-  background-color: crimson;
+  background-color: #00cc00;
   grid-area: c; }
 
 .footer {
-  background-color: green;
-  grid-area: f; }
+  background-color: maroon;
+  grid-area: f;
+  text-align: center;
+  position: relative; }
+  .footer-text {
+    position: absolute;
+    font-size: 3rem;
+    color: cornsilk;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .footer-text span {
+      color: darkkhaki; }
+  .footer-links {
+    margin-top: 1rem; }
+    .footer-links img {
+      height: 4rem; }
 
 .header {
   background-color: crimson;
@@ -55,7 +70,8 @@ body {
   .header-text {
     text-align: center;
     text-shadow: 0 .5rem .5rem blue;
-    backface-visibility: hidden; }
+    backface-visibility: hidden;
+    text-transform: uppercase; }
   .header-text-main {
     display: block;
     letter-spacing: 2rem;

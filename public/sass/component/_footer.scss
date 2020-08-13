@@ -1,4 +1,28 @@
 .footer {
-    background-color: green;
+    background-color: maroon;
     grid-area: f;
+    text-align: center;
+    position: relative;
+
+    &-text {
+        position: absolute;
+        font-size: 3rem;
+        color: cornsilk;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        span {
+            color: darkkhaki;
+        }
+    }
+
+    &-links {
+        margin-top: 1rem;
+
+        img {
+            height: 4rem;
+        }
+    }
+
 }
